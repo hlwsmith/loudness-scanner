@@ -28,4 +28,5 @@ if(GMODULE20_FOUND AND GSTREAMER_FOUND AND
   set_target_properties(input_gstreamer PROPERTIES
           COMPILE_FLAGS ${INPUT_GSTREAMER_CFLAGS})
   target_link_libraries(input_gstreamer ${INPUT_GSTREAMER_LDFLAGS})
+  install(TARGETS input_gstreamer DESTINATION lib)
 endif()

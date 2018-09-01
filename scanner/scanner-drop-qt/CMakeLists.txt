@@ -35,5 +35,6 @@ if(TARGET scanner-tag)
             Qt5::Svg
             Qt5::Widgets
             )
+    install(TARGETS loudness-drop-qt DESTINATION bin)
   endif()
 endif()
